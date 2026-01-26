@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- Header -->
     <header class="header">
       <div class="header-logo">Header Logo</div>
+
       <nav class="header-link">
         <ul>
           <li>header link one</li>
@@ -17,69 +19,86 @@
         </ul>
       </nav>
     </header>
-    <section class="hero-text-section">
-      <div class="hero-text">
-        <div class="hero-text-main">This website is awesome</div>
-        <div class="hero-text-secondary">
-          This website has some subtext that goes here under the main title.
-          It's a smaller font and the color is lower contrast
+
+    <!-- Main content -->
+    <main>
+      <!-- Hero section -->
+      <section class="hero">
+        <div class="hero-text">
+          <h1 class="hero-title">This website is awesome</h1>
+
+          <p class="hero-subtitle">
+            This website has some subtext that goes here under the main title.
+            It's a smaller font and the color is lower contrast
+          </p>
+
+          <button class="hero-button">Sign up</button>
         </div>
-        <div class="hero-text-button">
-          <button><a href="#">Sign up</a></button>
+
+        <div class="hero-image">
+          <img src="" alt="" />
         </div>
-      </div>
-      <div class="hero-text-image">
-        <img src="" alt="" />
-      </div>
-    </section>
-    <section class="info-section">
-      <div class="info-title"></div>
-      <div class="info-container">
-        <div class="info">
-          <div class="info-image">
-            <img src="" alt="" />
+      </section>
+
+      <!-- Information -->
+      <section class="info-section">
+        <h1 class="info-title">Some random information.</h1>
+        <div class="info-container">
+          <div class="info">
+            <div class="info-image">
+              <img src="" alt="" />
+            </div>
+            <p class="info-text">Text</p>
           </div>
-          <div class="info-text">Text</div>
-        </div>
-        <div class="info">
-          <div class="info-image">
-            <img src="" alt="" />
+
+          <div class="info">
+            <div class="info-image">
+              <img src="" alt="" />
+            </div>
+            <p class="info-text">Text</p>
           </div>
-          <div class="info-text">Text</div>
-        </div>
-        <div class="info">
-          <div class="info-image">
-            <img src="" alt="" />
+
+          <div class="info">
+            <div class="info-image">
+              <img src="" alt="" />
+            </div>
+            <p class="info-text">Text</p>
           </div>
-          <div class="info-text">Text</div>
-        </div>
-        <div class="info">
-          <div class="info-image">
-            <img src="" alt="" />
+
+          <div class="info">
+            <div class="info-image">
+              <img src="" alt="" />
+            </div>
+            <p class="info-text">Text</p>
           </div>
-          <div class="info-text">Text</div>
         </div>
-      </div>
-    </section>
-    <blockquote class="quote-section">
-      <div class="quote">
-        This is an inspiring quote, or a testimonial from a customer. Maybe it's
-        just filling up space, or maybe people will actually read it. Who knows?
-        All I know is that it looks nice.
-      </div>
-      <div class="quote-author">-Thor, the God of Thunder</div>
-    </blockquote>
-    <div class="cta">
-      <div class="cta-text">
-        <div class="cta-text-main">Call to action! It's time!</div>
-        <div class="cta-text-secondary">
-          Sign up for our product by clicking that button right over there!
+      </section>
+
+      <!-- Quote section -->
+      <blockquote class="quote-section">
+        <q class="quote">
+          This is an inspiring quote, or a testimonial from a customer. Maybe
+          it's just filling up space, or maybe people will actually read it. Who
+          knows? All I know is that it looks nice.
+        </q>
+        <p class="quote-author">-Thor, the God of Thunder</p>
+      </blockquote>
+
+      <!-- "Call to action" section-->
+      <section class="cta">
+        <div class="cta-text">
+          <h1 class="cta-title">Call to action! It's time!</h1>
+
+          <p class="cta-subtitle">
+            Sign up for our product by clicking that button right over there!
+          </p>
         </div>
-      </div>
-      <div class="cta-button">
-        <button><a href="#">Sign up</a></button>
-      </div>
-    </div>
+
+        <button class="cta-button">Sign up</button>
+      </section>
+    </main>
+
+    <!-- Footer -->
     <footer class="footer">Copyright © The Odin Project 2021</footer>
   </body>
 </html>
