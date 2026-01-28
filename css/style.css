@@ -10,6 +10,11 @@ body {
   flex-direction: column;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 h1,
 q,
 p,
@@ -107,4 +112,58 @@ button {
 
 .hero-image img {
   width: 500px;
+}
+
+.info-section {
+  flex: 0 0 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-section .wrapper {
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 70px;
+}
+
+.info-header {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1f2937;
+}
+
+.info-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-image {
+  display: flex;
+  border: 4px solid #3882f6;
+  border-radius: 20px;
+  width: 160px;
+  height: 160px;
+}
+
+.info-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+
+  text-align: center;
+  padding: 8px;
+  font-size: 18px;
+  color: gray;
 }
