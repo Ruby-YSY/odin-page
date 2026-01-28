@@ -211,3 +211,55 @@ button {
   font-weight: 600;
   margin-right: 30px;
 }
+
+/* "Call to action" section */
+.cta {
+  flex: 0 0 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex: 1 1 auto;
+  height: 150px;
+
+  background-color: #3882f6;
+  border-radius: 8px;
+  padding: 0 120px;
+}
+
+.cta-text {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+
+  color: #f9faf8;
+}
+
+.cta-title {
+  font-size: 22px;
+}
+
+.cta-button {
+  border: 3px solid #f9faf8;
+  color: #f9faf8;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #1f2937;
+  font-size: 18px;
+  color: #f9faf8;
+  flex: 0 0 100px;
+}
