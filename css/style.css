@@ -10,6 +10,7 @@ body {
   flex-direction: column;
 }
 
+/* Main content */
 main {
   display: flex;
   flex-direction: column;
@@ -19,9 +20,15 @@ h1,
 q,
 p,
 img,
-button {
+button,
+blockquote {
   margin: 0;
   padding: 0;
+}
+
+q::before,
+q::after {
+  content: "";
 }
 
 button {
@@ -47,6 +54,7 @@ button {
   width: 1024px;
 }
 
+/* Header */
 .header-logo {
   font-size: 24px;
   font-weight: 600;
@@ -69,6 +77,7 @@ button {
   gap: 22px;
 }
 
+/* Hero section */
 .hero {
   padding-top: 80px;
   padding-bottom: 100px;
@@ -114,6 +123,7 @@ button {
   width: 500px;
 }
 
+/* Information section */
 .info-section {
   flex: 0 0 500px;
   display: flex;
@@ -166,4 +176,38 @@ button {
   padding: 8px;
   font-size: 18px;
   color: gray;
+}
+
+/* Quote section*/
+.quote-section {
+  flex: 0 0 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #e5e7eb;
+}
+
+.quote-section .wrapper {
+  flex-direction: column;
+  align-items: center;
+  flex: 0 1 800px;
+}
+
+.quote {
+  display: flex;
+
+  font-size: 36px;
+  color: #1f2937;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.quote-author {
+  display: flex;
+  align-self: flex-end;
+
+  font-size: 22px;
+  font-weight: 600;
+  margin-right: 30px;
 }
