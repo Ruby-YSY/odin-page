@@ -1,8 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-body {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
   margin: 0;
   font-family: Roboto, sans-serif;
 
@@ -14,16 +23,6 @@ body {
 main {
   display: flex;
   flex-direction: column;
-}
-
-h1,
-q,
-p,
-img,
-button,
-blockquote {
-  margin: 0;
-  padding: 0;
 }
 
 q::before,
@@ -51,7 +50,9 @@ button {
 .wrapper {
   display: flex;
   align-items: center;
-  width: 1024px;
+
+  max-width: 1024px;
+  width: 100%;
 }
 
 /* Header */
@@ -61,20 +62,24 @@ button {
   color: #f9faf8;
 }
 
-.header-link {
+.header-links {
   display: flex;
   margin-left: auto;
 }
 
-.header-link ul {
-  font-size: 18px;
-  color: #e5e7eb;
+.header-links ul {
   list-style-type: none;
 
   padding: 0;
   margin: 0;
   display: flex;
   gap: 22px;
+}
+
+.header-links a {
+  font-size: 18px;
+  color: #e5e7eb;
+  text-decoration: none;
 }
 
 /* Hero section */
@@ -125,7 +130,7 @@ button {
 
 /* Information section */
 .info-section {
-  flex: 0 0 500px;
+  padding: 50px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -151,7 +156,7 @@ button {
   gap: 40px;
 }
 
-.info {
+.info-item {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -162,15 +167,14 @@ button {
   display: flex;
   border: 4px solid #3882f6;
   border-radius: 20px;
-  width: 160px;
-  height: 160px;
+  width: 168px;
+  height: 168px;
 }
 
 .info-text {
-  display: flex;
   justify-content: center;
   align-items: center;
-  width: 168px;
+  width: 180px;
 
   text-align: center;
   padding: 8px;
@@ -180,7 +184,7 @@ button {
 
 /* Quote section*/
 .quote-section {
-  flex: 0 0 500px;
+  padding: 100px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -195,8 +199,6 @@ button {
 }
 
 .quote {
-  display: flex;
-
   font-size: 36px;
   color: #1f2937;
   font-weight: 300;
@@ -204,7 +206,6 @@ button {
 }
 
 .quote-author {
-  display: flex;
   align-self: flex-end;
 
   font-size: 22px;
@@ -214,7 +215,7 @@ button {
 
 /* "Call to action" section */
 .cta {
-  flex: 0 0 400px;
+  padding: 100px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -226,11 +227,10 @@ button {
   align-items: center;
 
   flex: 1 1 auto;
-  height: 150px;
 
   background-color: #3882f6;
   border-radius: 8px;
-  padding: 0 120px;
+  padding: 50px 120px;
 }
 
 .cta-text {
@@ -261,5 +261,5 @@ button {
   background-color: #1f2937;
   font-size: 18px;
   color: #f9faf8;
-  flex: 0 0 100px;
+  padding: 40px 0;
 }
